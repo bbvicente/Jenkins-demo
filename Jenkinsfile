@@ -12,6 +12,11 @@ pipeline {
                 sh "echo Tetsing Stage2"
             }
         }
+        stage('Git Webhook'){
+            steps{
+                sh "echo Git Webhook"
+            }
+        }
         stage('Deploy'){
             steps{
                 sh "echo Deploying Stage3"
